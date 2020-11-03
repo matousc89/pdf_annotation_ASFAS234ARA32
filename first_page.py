@@ -121,9 +121,8 @@ if __name__ == "__main__":
     PAPER_PATH = "pyjournal_latex_template.pdf"
     OUTPUT_PATH = "output.pdf"
 
-    #insert_first_page(PAPER_PATH, OUTPUT_PATH)
-
-    insert_pagenumbers(PAPER_PATH, OUTPUT_PATH, start_page=2, end_page=False, first_number=2)
+    insert_first_page(PAPER_PATH, "step1.pdf")
+    insert_pagenumbers("step1.pdf", "final.pdf", start_page=2, end_page=False, first_number=2)
 
 
 
